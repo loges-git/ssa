@@ -1,6 +1,17 @@
- -- Insert departments
+/*
+Change History
+
+Change reason : Project CS
+Author : Logesh
+search tag : --BANKING-098765 changes
+
+*/
+-- Insert departments
 INSERT INTO department VALUES (10, 'IT');
 INSERT INTO department VALUES (20, 'HR');
+--BANKING-098765 changes starts
+INSERT INTO department VALUES (90, 'IR');
+--BANKING-098765 changes ends
 INSERT INTO department VALUES (30, 'FINANCE');
 
 -- Insert employees
