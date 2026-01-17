@@ -13,4 +13,4 @@ ON e.dept_id = d.dept_id;
 -- Employees earning more than 50k
 SELECT emp_name, salary
 FROM employee
-WHERE salary > 50000;
+WHERE salary > 50000; 
