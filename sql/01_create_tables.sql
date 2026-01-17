@@ -15,3 +15,4 @@ CREATE TABLE employee (
         FOREIGN KEY (dept_id)
         REFERENCES department(dept_id)
 );
+ 

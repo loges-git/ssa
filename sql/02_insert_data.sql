@@ -1,4 +1,4 @@
--- Insert departments
+ -- Insert departments
 INSERT INTO department VALUES (10, 'IT');
 INSERT INTO department VALUES (20, 'HR');
 INSERT INTO department VALUES (30, 'FINANCE');
