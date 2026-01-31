@@ -1,14 +1,14 @@
-/*Change History
-
-Change reason : test 1
-search tag : BANKING-123123-RETRY CHANGES
-AUTHOR : Logesh R
-
+/*
+Change history
+Change reason : test
+date : 24-01-2026
+search tag : BANKING-101010
 */
+
 create or replace type body pljson as
 
   /* constructors */
-  constructor function pljson return self as result as
+  constructor function pljson return self as result as--search tag : BANKING-101010
   begin
     self.json_data := pljson_element_array();
     self.typeval := 1;
@@ -25,7 +25,7 @@ create or replace type body pljson as
     self.check_for_duplicate := 1;
     return;
   end;
---BANKING-123123-RETRY CHANGES starts
+
   constructor function pljson(str in clob) return self as result as
   begin
     self := pljson_parser.parser(str);
@@ -33,7 +33,7 @@ create or replace type body pljson as
     self.check_for_duplicate := 1;
     return;
   end;
-BANKING-123123-RETRY CHANGES ends
+
   constructor function pljson(str in blob, charset varchar2 default 'UTF8') return self as result as
     c_str clob;
   begin
@@ -591,9 +591,3 @@ BANKING-123123-RETRY CHANGES ends
 end;
 /
 show err
-
-  constructor function pljson(elem pljson_element) return self as result as --BANKING-112112 CHANGES STARTS
-  end; --BANKING-112112 CHANGES ENDS
-  --BANKING-112112 CHANGES STARTS
-  --overriding member function value_of(max_byte_size number default null, max_char_size number default null) return varchar2 as --BANKING-112112 CHANGES COMMENTED
-    NEW -- --BANKING-112112 CHANGES ENDS
